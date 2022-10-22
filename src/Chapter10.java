@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Chapter10 {
-
+	
 	public static void main(String[] args) {
 		
         List<Task> list = new ArrayList<>();
@@ -14,7 +14,7 @@ public class Chapter10 {
         list.add(new Task(LocalDate.of(2021, 11, 9), "スクールの課題を解く", false));
 
         // 未完了のタスクの個数を表示
-        System.out.println("未完了のタスクの個数は"
+        System.out.println("未完了のタスクの個数は" 
         		+ list.stream()
         		.filter(f -> f.isDone() == false)
         		.count());
